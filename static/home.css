@@ -24,7 +24,7 @@ body {
   .profile-card {
       background-color: #222222;
     margin-bottom: 20px;
-              
+    z-index: 0;
           }
           
   .profile-pic {
@@ -74,7 +74,7 @@ body {
           }
   
   .profile-card:hover .hvr-underline-from-center  {
-    transform: scale(1.1);
+    transform: scale(1.005);
     color:green;
           }
           
@@ -118,4 +118,67 @@ body {
     background: #CECECE;
     border-radius: 0;
   }
+  .nav-bar{
+    background-color: lightblue;
+    position:fixed;
+    top:0;
+    width:100%;
+    padding:2%;
+    margin-bottom:2%;
+    z-index: 1;
+}
+.nav-big {
+    /* background-color: beige; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.main{
+    background-color: palevioletred;
+    position:relative;
+}
+.footer{
+    background-color: palegreen;
+    align-self: baseline
+    /* position:; */
+    /* bottom:0; */
+
+}
+.button {
+    background-color: deepskyblue;
+    width:20%;                          /* the width can be adjusted to the user's needs*/
+    display: inline-block;
+}
+@media only screen and (max-width: 767px)
+{
+    .button {
+        width: 100%;
+        margin: 1%;
+    }
+    #nav-big{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        display: none;
+    }
+}
+svg {
+    height: 2%;
+    width: 2%;
+    margin: 0px;
+}
+.nav-small {
+    display: flex;
+    justify-content: center;
+    background-color: aquamarine;
+    padding:0;
+
+}
+@media only screen and (min-width: 768px)
+{
+    .nav-small {
+        display: none;
+    }
+}
+
   
