@@ -1,8 +1,10 @@
 body {
-    background-color: beige;
     padding: 0px;
     margin: 0px;
-}
+    font-family: "Sofia", sans-serif;
+    font-size: 30px;
+    background-color: red;
+  }
 .header{
     background-color: darkseagreen;
 }
@@ -20,10 +22,13 @@ body {
     justify-content: space-evenly;
 }
 .footer{
-    background-color: palegreen;
-    position:absolute;
-    /* bottom:0; */
-
+    position:static;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: red;
+    color: white;
+    text-align: center;
 }
 .button {
     background-color: deepskyblue;
@@ -70,4 +75,19 @@ svg {
 
 .bigimg{
     width:100%;
+}
+.about{
+    background-color:lightblue;
+}
+.font-effect-fire{
+    font-family: 'Bungee Spice';font-size: 32px;
+}
+.about p{
+    font-family: 'Aladin';font-size: 22px;
+}
+.font-effect-shadow-multiple h1{
+    font-family: 'Nabla';font-size: 42px;
+}
+.right-content{
+    margin-left:14% ;
 }
